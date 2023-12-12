@@ -5,13 +5,20 @@ This repository contains a minimalist implementation of a Unix-like shell in C, 
 
 ## Features:
 
--Command execution and argument parsing
+-Display a prompt and wait for the user to type a command. A command line always ends with a new line.
 
--Simple interactive mode
+-The prompt is displayed again each time a command has been executed.
 
--Basic piping functionality
+-The command lines are simple, no semicolons, no pipes, no redirections or any other advanced features.
 
--Support for built-in commands
+-The command lines are made only of one word. No arguments will be passed to programs.
+
+-If an executable cannot be found, print an error message and display the prompt again.
+
+-Handle errors.
+
+-You have to handle the “end of file” condition (Ctrl+D).
+
 
 ## Usage:
 To use the simple shell, clone the repository and compile the code using a C compiler. Run the executable to launch the shell.

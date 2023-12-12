@@ -13,9 +13,9 @@ This repository contains a minimalist implementation of a Unix-like shell in C, 
 ## Usage:
 To use the simple shell, clone the repository and compile the code using a C compiler. Run the executable to launch the shell.
 
-Contributors:
+## Contributors:
 [Dave Bryan Tamakloe](https://github.com/DaveBryan001) and [Daniel Okine](https://github.com/niito99)
 
-License:
-This project is licensed under ALX
+### License:
+This project is licensed under ALX.
 

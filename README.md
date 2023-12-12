@@ -6,6 +6,7 @@ This repository contains a minimalist implementation of a Unix-like shell in C, 
 ## Features:
 
 -Command execution and argument parsing
+
 -Simple interactive mode
 
 -Basic piping functionality

@@ -1,15 +1,16 @@
-#Simple Shell
+# Simple Shell
 
-##Description:
+## Description:
 This repository contains a minimalist implementation of a Unix-like shell in C, designed for educational purposes and as a starting point for understanding the fundamentals of shell programming. The shell supports basic command execution, simple piping, and has a straightforward interactive mode.
 
-##Features:
+## Features:
 
-Command execution and argument parsing
-Simple interactive mode
-Basic piping functionality
-Support for built-in commands
-Usage:
+-Command execution and argument parsing
+-Simple interactive mode
+-Basic piping functionality
+-Support for built-in commands
+
+## Usage:
 To use the simple shell, clone the repository and compile the code using a C compiler. Run the executable to launch the shell.
 
 Contributors:

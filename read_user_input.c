@@ -30,5 +30,4 @@ void read_input(char **input, size_t *size)
 	{
 		(*input)[read_size - 1] = '\0';
 	}
-	/*	input[strcspn(input, "\n")] = '\0';*/
 }

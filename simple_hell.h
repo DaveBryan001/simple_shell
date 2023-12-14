@@ -13,8 +13,7 @@
 void print_my(const char *my_text);
 void my_prompt(void);
 void read_input(char **input, size_t *size);
-void exec_user_command(const char *input);
-//void print_my(const char *format, ...);
+void exec_user_command(const char *input, char *envp[]);
 
 
 

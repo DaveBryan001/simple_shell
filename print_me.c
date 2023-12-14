@@ -1,6 +1,13 @@
 #include "simple_hell.h"
 
-void print_me(const char *my_text)
+/**
+ * print_my - prints text to stdout
+ * @my_text: pointer to string
+ * Return: no return
+ */
+
+void print_my(const char *my_text)
 {
-	write(STDOUT_FILENO, text, strlen(my_text));
+	write(STDOUT_FILENO, my_text, strlen(my_text));
 }
+

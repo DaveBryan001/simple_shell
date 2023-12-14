@@ -4,10 +4,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-#include <stdbool.h>
+#include <stdarg.h>
 #include <string.h>
+#include <sys/wait.h>
+#include <sys/types.h>
+#include <stddef.h>
 
-void(
+void print_my(const char *my_text);
+void my_prompt(void);
+void read_input(char **input, size_t *size);
+void exec_user_command(const char *input);
+//void print_my(const char *format, ...);
+
 
 
 #endif /*SIMPLE_HELL_H*/

@@ -13,6 +13,7 @@ void read_input(char **input, size_t *size)
 
 	read_size = getline(input, size, stdin);
 
+	printf("read: %ld\n",read_size);
 	if (read_size == -1)
 	{
 		if (feof(stdin))

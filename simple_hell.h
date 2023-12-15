@@ -15,6 +15,7 @@ void my_prompt(void);
 void read_input(char **input, size_t *size);
 void exec_user_command(const char *input, char *envp[]);
 char *_strncat(char *dest, char *src, int n);
+void exec_user_command_task1(const char *input, char *envp[]);
 
 
 #endif /*SIMPLE_HELL_H*/

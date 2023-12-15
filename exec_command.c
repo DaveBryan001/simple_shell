@@ -13,27 +13,27 @@
 
 void exec_user_command(const char *input, char *envp[])
 {
-    pid_t child_pid = fork();
+	pid_t child_pid = fork();
 
-    if (child_pid == -1)
-    {
-        perror("Error forking process.\n");
-        exit(EXIT_FAILURE);
-    }
-    else if (child_pid == 0)
-    {
-        char *args[2];
-        args[0] = (char *)input;
-        args[1] = NULL;
+	if (child_pid == -1)
+	{
+		perror("Error forking process.\n");
+		exit(EXIT_FAILURE);
+	}
+	else if (child_pid == 0)
+	{
+		char *args[2];
+		args[0] = (char *)input;
+		args[1] = NULL;
 
-        if (execve(args[0], args, envp) == -1)
-        {
-            perror("execve: Command not found.\n");
-            exit(EXIT_FAILURE);
-        }
-    }
-    else
-    {
-        wait(NULL);
-    }
+		if (execve(args[0], args, envp) == -1)
+		{
+			perror("execve: Command not found.\n");
+			exit(EXIT_FAILURE);
+		}
+	}
+	else
+	{
+		wait(NULL);
+	}
 }

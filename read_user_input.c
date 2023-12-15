@@ -11,9 +11,10 @@ void read_input(char **input, size_t *size)
 {
 	ssize_t read_size;
 
+	*input = NULL;
+
 	read_size = getline(input, size, stdin);
 
-	printf("read: %ld\n",read_size);
 	if (read_size == -1)
 	{
 		if (feof(stdin))
@@ -27,6 +28,7 @@ void read_input(char **input, size_t *size)
 			exit(EXIT_FAILURE);
 		}
 	}
+
 	if ((*input)[read_size - 1] == '\n')
 	{
 		(*input)[read_size - 1] = '\0';

@@ -24,7 +24,8 @@ void exec_user_command(const char *input, char *envp[])
 	else if (child_pid == 0)
 	{
 		char *args[256];
-		char exec_path[1024] = "";
+	/*	char exec_path[1024] = "";
+	 */
 		int arg_count = 0;
 
 		char *token = strtok((char *)input, " ");
@@ -36,11 +37,12 @@ void exec_user_command(const char *input, char *envp[])
 		}
 		args[arg_count] = NULL;
 
+		/**
 		_strncat(exec_path, "/bin/", sizeof(exec_path));
 		_strncat(exec_path, args[0], sizeof(exec_path));
+		*/
 
-
-		if (execve(exec_path, args, envp) == -1)
+		if (execve(args[0], args, envp) == -1)
 		{
 			perror("execve: Command not found.\n");
 			exit(EXIT_FAILURE);

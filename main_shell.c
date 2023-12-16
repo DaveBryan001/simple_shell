@@ -18,8 +18,13 @@ int main(void)
 		my_prompt();
 		read_input(&input, &size);
 
-	/*	exec_user_command(input, envp);
-	*/
+		/*	exec_user_command(input, envp);
+		*/
+		if (_strcmp(input, "exit") == 0) 
+		{
+			print_my("Exiting the shell.\n");
+			break;
+		}
 		exec_user_command_task1(input, envp);
 		free(input);
 	}
